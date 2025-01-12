@@ -1,6 +1,6 @@
 services:
   listener:
-    image: piotrostr/listen
+    image: markzao/listen
     ports:
       - "8078:8078"
     volumes:
@@ -14,7 +14,7 @@ services:
       mode: replicated
       endpoint_mode: vip
   checker:
-    image: piotrostr/listen
+    image: markzao/listen
     ports:
       - "8079:8079"
     volumes:
@@ -28,7 +28,7 @@ services:
       mode: replicated
       endpoint_mode: vip
   buyer:
-    image: piotrostr/listen
+    image: markzao/listen
     ports:
       - "8080:8080"
     volumes:
@@ -44,7 +44,7 @@ services:
       mode: replicated
       endpoint_mode: vip
   seller:
-    image: piotrostr/listen
+    image: markzao/listen
     ports:
       - "8081:8081"
     volumes:
