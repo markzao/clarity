@@ -1,10 +1,10 @@
 [package]
-name = "listen"
+name = "clarity"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
 description = "solana actions for AI agents"
-documentation = "docs.listen-rs.com"
+documentation = "docs.clarity.com"
 
 [dependencies]
 anyhow = "1.0.53"
