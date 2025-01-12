@@ -1,15 +1,15 @@
 <p align="center">
-<img src="frontend/public/listen.svg" width="25%" />
+<img src="frontend/public/clarity.svg" width="25%" />
 <br />
 </p>
 <p align="center">
-<a href="https://docs.listen-rs.com/"><img src="https://img.shields.io/badge/docs-API-blue.svg" /></a> &nbsp;
-<a href="https://github.com/piotrostr/listen"><img src="https://img.shields.io/github/stars/piotrostr/listen?style=social" /></a>
+<a href="https://docs.clarity.com/"><img src="https://img.shields.io/badge/docs-API-blue.svg" /></a> &nbsp;
+<a href="https://github.com/piotrostr/clarity"><img src="https://img.shields.io/github/stars/piotrostr/clarity?style=social" /></a>
 <a href=""><img src="https://img.shields.io/badge/built_with-Rust-dca282.svg?logo=rust" /></a>
 </p>
 
 <p align="center">
-<code>listen</code> is a Solana Swiss-Knife toolkit for algorithmic trading
+<code>clarity</code> is a Solana Swiss-Knife toolkit for algorithmic trading
 </p>
 
 ## Features
@@ -26,11 +26,11 @@ And more!
 It works plug'n'play with [$arc rig
 framework](https://github.com/0xPlaygrounds/rig) framework allowing AI Agents
 interact with the Solana blockchain, see example:
-[src/agent.rs](https://github.com/piotrostr/listen/blob/main/src/agent.rs) and
-the output [image](https://github.com/piotrostr/listen/blob/main/example.png).
+[src/agent.rs](https://github.com/piotrostr/clarity/blob/main/src/agent.rs) and
+the output [image](https://github.com/piotrostr/clarity/blob/main/example.png).
 
 For complete rundown of features, check out the CLI output of `cargo run` or the
-[documentation](https://docs.listen-rs.com/).
+[documentation](https://docs.clarity.com/).
 
 This repository contains some miscellanous tools for grabbing data from bullx/gmgn.ai/pump.fun unofficial APIs, in `bullx`, `watcher`, `pump-ts` and an analysis module, all which might be useful, though the core of the library is located in the `src` directory.
 
@@ -70,7 +70,7 @@ cargo build --release
 ### Transaction Monitoring
 
 ```bash
-cargo run -- listen \
+cargo run -- clarity \
   --worker-count [COUNT] \
   --buffer-size [SIZE]
 ```
@@ -89,7 +89,7 @@ cargo run -- swap \
 
 ## Metrics and Monitoring
 
-Listen includes built-in metrics exposed at `localhost:3030/metrics`. To visualize:
+clarity includes built-in metrics exposed at `localhost:3030/metrics`. To visualize:
 
 1. Start Prometheus:
 
@@ -104,7 +104,7 @@ Grafana should show something like this
 <img
 width="910"
 alt="image"
-src="https://github.com/piotrostr/listen/assets/63755291/95668158-9f7d-4cd2-be84-7c2b893d3f5c">
+src="https://github.com/piotrostr/clarity/assets/63755291/95668158-9f7d-4cd2-be84-7c2b893d3f5c">
 
 ## Advanced Usage
 
@@ -124,5 +124,5 @@ Profile swap performance using DTrace to produce a flamegraph:
 ./hack/profile-swap.sh
 ```
 
-<img width="1210" alt="image" src="https://github.com/piotrostr/listen/assets/63755291/699405b7-adf0-448b-89c1-ba71152dc72b">
+<img width="1210" alt="image" src="https://github.com/piotrostr/clarity/assets/63755291/699405b7-adf0-448b-89c1-ba71152dc72b">
 
